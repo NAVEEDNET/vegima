@@ -1,0 +1,94 @@
+
+
+.sub-page
+
+{
+
+    width: 1277px;
+
+    height: 450px;
+
+    position: absolute;
+
+    background:linear-gradient(rgba(5, 0, 0, 0.6),rgb(6, 6, 6)), url(images/c.jpg);
+
+    background-size: cover;
+	
+	min-height: 99.5vh;
+
+    left: 1px;
+
+    top: 1px;
+
+}
+.myVideo {
+    position: fixed;
+   
+  }
+  .content {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color:lightyellow;
+    font-size: 15px;
+    width: 100%;
+    padding: 5px;
+  }
+
+
+.row
+
+{
+
+    display: flex;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    justify-content: space-around;
+
+}
+.col-1
+
+{
+
+    flex-basis: 50%;
+
+    min-width: 500px;
+
+}
+
+
+.main-heading
+
+{
+
+    color: white;
+
+    padding-bottom: 16px;
+
+	font-size:32px;
+
+}
+
+
+
+
+
+
+.defination
+
+{
+
+    text-align: left;
+
+    font-size: 35px;
+
+    color: rgb(239, 229, 229);
+
+   font-family: 'Kaushan Script', cursive;
+
+    padding-left: 50px;
+
+}

@@ -1,0 +1,275 @@
+
+
+
+:root{
+    --orange:#ff7800;
+    --black:#e6e5ef;
+    --light-color:#666;
+    --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+    --border:.2rem solid rgba(0,0,0,.1);
+    --outline:.1rem solid rgba(0,0,0,.1);
+    --outline-hover:.2rem solid var(--black);
+}
+
+
+*{
+    font-family: 'Rubik', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+
+body{
+    background:rgb(32, 31, 31);
+}
+
+section{
+    padding:2rem 9%;
+}
+
+
+
+
+.heading{
+    text-align: center;
+    padding:2rem 0;
+    padding-bottom: 3rem;
+    font-size: 3.5rem;
+    color:whitesmoke;
+    
+}
+
+.heading span{
+    background: var(--orange);
+    color:#fff;
+    display: inline-block;
+    padding:.5rem 3rem;
+    clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+}
+
+.header{
+    position: fixed;
+    top:0; left:0; right: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:2rem 9%;
+    font-family: 'Kaushan Script', cursive;
+    
+   
+}
+.header .logo{
+    font-size:7rem;
+    color:rgb(238, 25, 25);
+}
+.header .logo  span{
+    color:lightslategray;
+    font-size:6.5rem;
+    
+    
+}
+.header .logo  span1{
+    color:whitesmoke;
+    font-size:8.5rem;
+    
+    
+    
+}
+.header .logo  span2{
+    color:orangered;
+    font-size:6rem;
+   
+   
+    
+    
+}
+
+    
+.header .logo i{
+    color:grey;
+    font-size:7rem;
+    
+}
+.header .icons div{
+   
+   
+    color:whitesmoke;
+    font-size:23px;
+    margin-left: 3rem;
+    cursor: pointer;
+    text-align: center;
+    padding: 2rem;
+    
+}
+.header .icons h6{
+   
+    font-family: 'Kaushan Script', cursive;
+    color:whitesmoke;
+    font-size:23px;
+    margin-left: 3rem;
+    cursor: pointer;
+    text-align: center;
+    padding-top: 1.5rem;
+    
+}
+
+
+.header .icons div:hover{
+  
+    color:orange;
+}
+.header .icons div h6:hover{
+  
+    color:orange;
+}
+
+.header .shopping-cart{
+    position: absolute;
+    top:110%; right:-110%;
+    padding:1rem;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    width:35rem;
+    height: 35rem;
+    background: white;
+    
+}
+
+.header .shopping-cart.active{
+    right:2rem;
+    transition: .4s linear;
+}
+
+.header .shopping-cart .box{
+    display: flex;
+    align-items: center;
+    gap:1rem;
+    position: relative;
+    margin:1rem 0;
+}
+
+.header .shopping-cart .box img{
+    height:8rem;
+}
+
+
+
+.header .shopping-cart .box .fa-trash:hover{
+    color:red;
+}
+
+.header .shopping-cart .box  h3{
+    color:black;
+    font-size: 1.7rem;
+    padding-bottom: 5rem;
+}
+
+.header .shopping-cart .box  span{
+    color:rgb(222, 12, 12);
+    font-size: 1.6rem;
+}
+
+
+
+
+
+
+
+.header .login-form{
+    position: absolute;
+    top:110%; right:-110%;
+    width:50rem;
+    height: 45rem;
+    box-shadow: var(--box-shadow);
+    padding:2rem;
+    border-radius: .5rem;
+    background: #fff;
+    text-align: center;
+}
+
+.header .login-form.active{
+    right:2rem;
+    transition: .4s linear;
+}
+
+.header .login-form h3{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: black;
+    padding:1rem;
+}
+.header .login-form h4{
+    font-size: 2rem;
+    color: gray;
+    padding:1rem;
+}
+.header .login-form p{
+    font-size: 1.5rem;
+    color: darkslateblue;
+}
+
+.header .login-form .box{
+    width: 100%;
+    margin:.7rem 0;
+   
+    border-radius: .5rem;
+    padding:1rem;
+    font-size: 1.6rem;
+    color:var(--black);
+    text-transform: none;
+}
+
+.header .login-form p{
+    font-size: 1.4rem;
+    padding:.5rem 0;
+    color:var(--light-color);
+}
+
+.header .login-form p a{
+    color:var(--orange);
+    text-decoration: underline;
+	
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../image/banner-bg.webp) no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 17rem;
+    padding-bottom: 10rem;
+}
+
+.home .content{
+    text-align: center;
+    width:60rem;
+}
+
+.home .content h3{
+    color:var(--black);
+    font-size: 3rem;
+}
+
+.home .content h3 span{
+    color:var(--orange);
+}
+
+.home .content p{
+    color:var(--light-color);
+    font-size: 1.7rem;
+    padding:1rem 0;
+    line-height: 1.8;
+}
