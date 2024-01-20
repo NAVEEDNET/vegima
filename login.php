@@ -1,8 +1,8 @@
 <?php
-
+session_start();
 @include 'config.php';
 
-session_start();
+
 
 if(isset($_POST['submit'])){
 
@@ -27,7 +27,7 @@ if(isset($_POST['submit'])){
         header('location:admin_page.php');
 
      }
-     elseif($row['type'] == 'seller')
+     elseif($row['type'] == 'Seller')
      {
 
         $_SESSION['seler_id'] = $row['id'];

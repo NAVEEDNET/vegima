@@ -1,13 +1,13 @@
 <?php
-
+session_start();
 @include 'config.php';
 
-session_start();
 
-$user_id = $_SESSION['user_id'];
+
+$user_id = $_SESSION['seler_id'];
 
 if(!isset($user_id)){
-   header('location:login1.php');
+   header('location:login.php');
 };
 
 if(isset($_POST['add product'])){
